@@ -16,7 +16,7 @@ interface Action {
 }
 let axiosInstance: AxiosInstance = axios;
 const cancelTokenSource: CancelTokenSource | null = null;
-const dataFetchReducer = <T extends any = any>(state: State<T>, action: Action): State<T> => {
+const dataFetchReducer = <T extends any = any>(state: State<T>, action: Action) => {
   switch (action.type) {
     case 'FETCH_INIT':
       return {
