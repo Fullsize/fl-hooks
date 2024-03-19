@@ -6,8 +6,8 @@ import axios, {
 } from 'axios';
 
 interface State<T> {
-  isLoading: boolean;
-  isError: boolean;
+  loading: boolean;
+  error: boolean;
   data: T | null;
 }
 interface Action {
@@ -21,21 +21,21 @@ const dataFetchReducer = <T extends any = any>(state: State<T>, action: Action):
     case 'FETCH_INIT':
       return {
         ...state,
-        isLoading: true,
-        isError: false,
+        loading: true,
+        error: false,
       };
     case 'FETCH_SUCCESS':
       return {
         ...state,
-        isLoading: false,
-        isError: false,
+        loading: false,
+        error: false,
         data: action.payload,
       };
     case 'FETCH_FAILURE':
       return {
         ...state,
-        isLoading: false,
-        isError: true,
+        loading: false,
+        error: true,
       };
     default:
       throw new Error();
@@ -46,8 +46,8 @@ function useAxios<T extends any = any>(
 ): [state: State<T>, dispatch: (config: AxiosRequestConfig) => void] {
   const [option, setOption] = useState(config);
   const [state, dispatch] = useReducer(dataFetchReducer, {
-    isLoading: false,
-    isError: false,
+    loading: false,
+    error: false,
     data: null,
   });
   useEffect(() => {
