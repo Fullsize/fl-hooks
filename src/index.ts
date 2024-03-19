@@ -1,2 +1,3 @@
 import useAxios from './useAxios';
-export { useAxios };
+import useFetch from './useFetch';
+export { useAxios, useFetch };
