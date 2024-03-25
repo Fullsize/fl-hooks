@@ -13,10 +13,12 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.8",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-markdown": "^9.0.1"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.25",
+    "@storybook/addon-docs": "^8.0.4",
     "@storybook/addon-essentials": "^8.0.4",
     "@storybook/addon-interactions": "^8.0.4",
     "@storybook/addon-links": "^8.0.4",
@@ -26,6 +28,7 @@
     "@storybook/react-vite": "^8.0.4",
     "@storybook/test": "^8.0.4",
     "prop-types": "^15.8.1",
-    "storybook": "^8.0.4"
+    "storybook": "^8.0.4",
+    "ts-node": "^10.9.2"
   }
 }
