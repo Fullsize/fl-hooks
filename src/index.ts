@@ -1,3 +1,4 @@
 import useAxios from './useAxios';
 import useFetch from './useFetch';
-export { useAxios, useFetch };
+import useLocalStorage from './useLocalStorage'
+export { useAxios, useFetch, useLocalStorage };
