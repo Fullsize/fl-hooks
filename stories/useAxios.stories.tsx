@@ -7,7 +7,7 @@ const Page = () => {
   return (
     <>
       {loading && <>....</>}
-      {error && error?.message}
+      {error && <>请求错误</>}
     </>
   );
 };
