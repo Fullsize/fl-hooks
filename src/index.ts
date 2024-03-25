@@ -1,2 +1,6 @@
-export { default as useAxios } from './useAxios';
-export { default as useLocalStorage } from './useLocalStorage';
+import useAxios from './useAxios'
+import useLocalStorage from './useLocalStorage'
+export default {
+  useAxios,
+  useLocalStorage
+}
