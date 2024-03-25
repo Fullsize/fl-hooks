@@ -1,4 +1,2 @@
-import useAxios from './useAxios';
-import useFetch from './useFetch';
-import useLocalStorage from './useLocalStorage'
-export { useAxios, useFetch, useLocalStorage };
+export { default as useAxios } from './useAxios';
+export { default as useLocalStorage } from './useLocalStorage';
