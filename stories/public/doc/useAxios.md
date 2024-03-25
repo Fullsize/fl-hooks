@@ -6,10 +6,14 @@
 import React from "react";
 import { useAxios } from "../src/index";
 const Page = () => {
-  useAxios({
-    url: "/123",
+  const [{ data, loading, error }] = useAxios({
+    url: "/myapi",
+    method: "post",
+    data: {
+      // my data
+    },
   });
-  return <code></code>;
+  return <></>;
 };
 export default Page;
 ```

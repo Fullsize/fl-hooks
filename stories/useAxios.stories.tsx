@@ -3,10 +3,16 @@ import React from "react";
 import { useAxios } from "../src";
 import ShowDocs from "./utl/ShowDocs";
 const Page = () => {
-  useAxios({ url: "/myapi" });
-  return <></>;
+  const [{ data, loading, error }] = useAxios({ url: "/myapi" });
+  return (
+    <>
+      {loading && <>....</>}
+      {error && error?.message}
+    </>
+  );
 };
 const meta: Meta<typeof useAxios> = {
+  title: "base/useAxios",
   component: Page,
 };
 
@@ -16,6 +22,6 @@ type Story = StoryObj<typeof useAxios>;
 export const Doc: Story = {
   render: () => <ShowDocs md={"doc/useAxios.md"} />,
 };
-export const Primary: Story = {
+export const Demo: Story = {
   render: () => <Page />,
 };
