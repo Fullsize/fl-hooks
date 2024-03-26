@@ -50,6 +50,7 @@ jobs:
         with:
           source: ./storybook-static
           destination: ./_site
+          jekyll: false
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

@@ -5,10 +5,8 @@ const config = {
   async viteFinal(config, { configType }) {
     // return the customized config
     return mergeConfig(config, {
-      // customize the Vite config here
-      resolve: {
-        alias: { foo: 'bar' },
-      },
+
+
     });
   },
   stories: ["../stories/*.mdx", "../stories/*.tsx", "../stories/*.stories.@(js|jsx|mjs|ts|tsx)"],
