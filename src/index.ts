@@ -1,6 +1,6 @@
 import useAxios from './useAxios'
 import useLocalStorage from './useLocalStorage'
-export default {
+export {
   useAxios,
   useLocalStorage
 }
