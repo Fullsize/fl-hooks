@@ -7,7 +7,7 @@
     "dev": "storybook dev -p 6006",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "storybook:publish": "pnpm storybook:build && touch ./storybook-static/.nojekyll && gh-pages -d ./storybook-static -t true"
+    "storybook:publish": "npm run  storybook:build && touch ./storybook-static/.nojekyll && gh-pages -d ./storybook-static -t true"
   },
   "keywords": [],
   "author": "",
