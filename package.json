@@ -28,6 +28,7 @@
     "@storybook/react": "^8.0.4",
     "@storybook/react-vite": "^8.0.4",
     "@storybook/test": "^8.0.4",
+    "gh-pages": "^6.1.1",
     "prop-types": "^15.8.1",
     "storybook": "^8.0.4",
     "ts-node": "^10.9.2"
