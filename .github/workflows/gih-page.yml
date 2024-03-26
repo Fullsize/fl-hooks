@@ -29,4 +29,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          jekyll: false
           folder: storybook-static # The folder the action should deploy.
