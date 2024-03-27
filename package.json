@@ -1,5 +1,5 @@
 {
-  "name": "react-hooks-library",
+  "name": "fl-hooks",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.index.umd.js",
