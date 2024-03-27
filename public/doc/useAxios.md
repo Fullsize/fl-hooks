@@ -1,6 +1,6 @@
 # useAxios
 
-基于axios的react hooks 封装，使用方法如axios(config)一样[文档链接](https://axios-http.com/docs/api_intro)
+基于axios的react hooks 封装，使用方法如axios(config),[文档链接](https://axios-http.com/docs/api_intro)
 
 ```javascript
 import React from "react";
