@@ -1,6 +1,8 @@
 # useLocalStorage
 
 ```javascript
+import React from "react";
+import { useLocalStorage } from "fl-hooks";
 const Page = () => {
   const [testValue, setTestValue] = useLocalStorage("test", null);
   return (
