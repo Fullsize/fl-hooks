@@ -7,6 +7,7 @@
     "dev": "storybook dev -p 6006",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "build:cjs": "rollup -c rollup.config.mjs",
     "storybook:publish": "npm run build-storybook && touch ./storybook-static/.nojekyll"
   },
   "keywords": [],
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.25",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@storybook/addon-docs": "^8.0.4",
     "@storybook/addon-essentials": "^8.0.4",
     "@storybook/addon-interactions": "^8.0.4",
@@ -32,6 +34,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-markdown": "^9.0.1",
+    "rollup": "^4.13.0",
     "storybook": "^8.0.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"

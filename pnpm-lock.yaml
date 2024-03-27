@@ -8,6 +8,9 @@ devDependencies:
   '@chromatic-com/storybook':
     specifier: ^1.2.25
     version: 1.2.25(react@18.2.0)
+  '@rollup/plugin-typescript':
+    specifier: ^11.1.6
+    version: 11.1.6(rollup@4.13.0)(typescript@5.4.3)
   '@storybook/addon-docs':
     specifier: ^8.0.4
     version: 8.0.4
@@ -31,7 +34,7 @@ devDependencies:
     version: 8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.3)
   '@storybook/react-vite':
     specifier: ^8.0.4
-    version: 8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.3)(vite@5.2.6)
+    version: 8.0.4(react-dom@18.2.0)(react@18.2.0)(rollup@4.13.0)(typescript@5.4.3)(vite@5.2.6)
   '@storybook/test':
     specifier: ^8.0.4
     version: 8.0.4
@@ -50,6 +53,9 @@ devDependencies:
   react-markdown:
     specifier: ^9.0.1
     version: 9.0.1(@types/react@18.2.69)(react@18.2.0)
+  rollup:
+    specifier: ^4.13.0
+    version: 4.13.0
   storybook:
     specifier: ^8.0.4
     version: 8.0.4(react-dom@18.2.0)(react@18.2.0)
@@ -1746,7 +1752,26 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@rollup/pluginutils@5.1.0:
+  /@rollup/plugin-typescript@11.1.6(rollup@4.13.0)(typescript@5.4.3):
+    resolution: {integrity: sha512-R92yOmIACgYdJ7dJ97p4K69I8gg6IEHt8M7dUBxN3W6nrO8uUxX5ixl0yU/N3aZTi8WhPuICvOHXQvF6FaykAA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^2.14.0||^3.0.0||^4.0.0
+      tslib: '*'
+      typescript: '>=3.7.0'
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+      tslib:
+        optional: true
+    dependencies:
+      '@rollup/pluginutils': 5.1.0(rollup@4.13.0)
+      resolve: 1.22.8
+      rollup: 4.13.0
+      typescript: 5.4.3
+    dev: true
+
+  /@rollup/pluginutils@5.1.0(rollup@4.13.0):
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -1758,6 +1783,7 @@ packages:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
+      rollup: 4.13.0
     dev: true
 
   /@rollup/rollup-android-arm-eabi@4.13.0:
@@ -2475,7 +2501,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
-  /@storybook/react-vite@8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.3)(vite@5.2.6):
+  /@storybook/react-vite@8.0.4(react-dom@18.2.0)(react@18.2.0)(rollup@4.13.0)(typescript@5.4.3)(vite@5.2.6):
     resolution: {integrity: sha512-SlAsLSDc9I1nhMbf0YgXCHaZbnjzDdv458xirmUj4aJhn45e8yhmODpkPYQ8nGn45VWYMyd0sC66lJNWRvI/FA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -2484,7 +2510,7 @@ packages:
       vite: ^4.0.0 || ^5.0.0
     dependencies:
       '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.0(typescript@5.4.3)(vite@5.2.6)
-      '@rollup/pluginutils': 5.1.0
+      '@rollup/pluginutils': 5.1.0(rollup@4.13.0)
       '@storybook/builder-vite': 8.0.4(typescript@5.4.3)(vite@5.2.6)
       '@storybook/node-logger': 8.0.4
       '@storybook/react': 8.0.4(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.3)
