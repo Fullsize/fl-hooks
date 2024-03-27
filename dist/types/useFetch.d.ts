@@ -1,3 +1,4 @@
+/// <reference types="react" />
 type Url = RequestInfo | URL | string;
 interface Config extends RequestInit {
     data?: {
@@ -10,5 +11,9 @@ interface Config extends RequestInit {
     cache?: RequestInit['cache'];
     baseURL?: string;
 }
-declare const useFetch: (url: Url, config: Config) => any[];
+declare const useFetch: (url: Url, config: Config) => ({
+    loading: boolean;
+    error: boolean;
+    data: any;
+} | import("react").Dispatch<import("react").SetStateAction<Config>>)[];
 export default useFetch;
