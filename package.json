@@ -2,12 +2,22 @@
   "name": "react-hooks-library",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "./dist/index.index.umd.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "storybook dev -p 6006",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build:cjs": "rollup -c rollup.config.mjs",
+    "build:lib": "rollup -c rollup.config.mjs",
     "storybook:publish": "npm run build-storybook && touch ./storybook-static/.nojekyll"
   },
   "keywords": [],
