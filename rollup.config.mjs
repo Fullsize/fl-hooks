@@ -1,6 +1,6 @@
 // rollup.config.mjs
 import typescript from '@rollup/plugin-typescript';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 export default {
   input: './src/index.ts', // 入口文件路径
   output: {

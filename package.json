@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.25",
+    "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
     "@storybook/addon-docs": "^8.0.4",
     "@storybook/addon-essentials": "^8.0.4",
