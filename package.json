@@ -2,7 +2,7 @@
   "name": "react-hooks-library",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.ts",
+  "main": "index.js",
   "scripts": {
     "dev": "storybook dev -p 6006",
     "storybook": "storybook dev -p 6006",
