@@ -1,112 +1,88 @@
-(function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('axios')) :
-    typeof define === 'function' && define.amd ? define(['exports', 'react', 'axios'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["fl-hooks"] = {}, global.react, global.axios));
-})(this, (function (exports, react, axios) { 'use strict';
-
-    let axiosInstance = axios;
-    const cancelTokenSource = null;
-    const dataFetchReducer = (state, action) => {
-        switch (action.type) {
-            case 'FETCH_INIT':
-                return {
-                    ...state,
-                    loading: true,
-                    error: false,
-                };
-            case 'FETCH_SUCCESS':
-                return {
-                    ...state,
-                    loading: false,
-                    error: false,
-                    data: action.payload,
-                };
-            case 'FETCH_FAILURE':
-                return {
-                    ...state,
-                    loading: false,
-                    error: true,
-                };
-            default:
-                throw new Error();
-        }
-    };
-    function useAxios(config) {
-        const [option, setOption] = react.useState(config);
-        const [state, dispatch] = react.useReducer(dataFetchReducer, {
-            loading: false,
-            error: false,
-            data: null,
-        });
-        react.useEffect(() => {
-            const abortController = new AbortController();
-            const fetchData = async () => {
-                dispatch({ type: 'FETCH_INIT' });
-                try {
-                    // Cancel previous request
-                    if (cancelTokenSource) ;
-                    const result = await axiosInstance({
-                        ...config,
-                        cancelToken: cancelTokenSource?.token,
-                    });
-                    if (!abortController.signal.aborted) {
-                        dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
-                    }
-                }
-                catch (error) {
-                    if (!axios.isCancel(error)) {
-                        dispatch({ type: 'FETCH_FAILURE' });
-                    }
-                }
-            };
-            fetchData();
-            return () => {
-            };
-        }, [option]);
-        const changeOption = (op) => {
-            setOption({
-                ...option,
-                ...op,
-            });
-        };
-        return [state, changeOption];
-    }
-    useAxios.extend = (ins) => {
-        axiosInstance = ins;
-    };
-
-    function useLocalStorage(key, initialValue) {
-        const [localState, handleSetState] = react.useState(() => {
-            try {
-                const item = window.localStorage.getItem(key);
-                return item ? JSON.parse(item) : initialValue ?? '';
-            }
-            catch (error) {
-                console.error(error);
-                return initialValue;
-            }
-        });
-        react.useEffect(() => {
-            try {
-                window.localStorage.setItem(key, JSON.stringify(localState));
-            }
-            catch (error) {
-                console.error(error);
-            }
-        }, [key, localState]);
-        const remove = () => {
-            try {
-                window.localStorage.removeItem(key);
-                handleSetState('');
-            }
-            catch (error) {
-                console.error(error);
-            }
-        };
-        return [localState, handleSetState, remove];
-    }
-
-    exports.useAxios = useAxios;
-    exports.useLocalStorage = useLocalStorage;
-
-}));
+!(function (e, t) {
+	"object" == typeof exports && "undefined" != typeof module
+		? t(exports, require("react"), require("axios"))
+		: "function" == typeof define && define.amd
+			? define(["exports", "react", "axios"], t)
+			: t(
+				((e = "undefined" != typeof globalThis ? globalThis : e || self)[
+					"fl-hooks"
+				] = {}),
+				e.react,
+				e.axios
+			);
+})(this, function (e, t, r) {
+	"use strict";
+	let o = r;
+	const n = (e, t) => {
+		switch (t.type) {
+			case "FETCH_INIT":
+				return { ...e, loading: !0, error: !1 };
+			case "FETCH_SUCCESS":
+				return { ...e, loading: !1, error: !1, data: t.payload };
+			case "FETCH_FAILURE":
+				return { ...e, loading: !1, error: !0 };
+			default:
+				throw new Error();
+		}
+	};
+	function a(e) {
+		const [a, c] = t.useState(e),
+			[s, i] = t.useReducer(n, { loading: !1, error: !1, data: null });
+		t.useEffect(() => {
+			const t = new AbortController();
+			return (
+				(async () => {
+					i({ type: "FETCH_INIT" });
+					try {
+						null;
+						const r = await o({ ...e, cancelToken: undefined });
+						t.signal.aborted || i({ type: "FETCH_SUCCESS", payload: r.data });
+					} catch (e) {
+						r.isCancel(e) || i({ type: "FETCH_FAILURE" });
+					}
+				})(),
+				() => { }
+			);
+		}, [a]);
+		return [
+			s,
+			(e) => {
+				c({ ...a, ...e });
+			},
+		];
+	}
+	(a.extend = (e) => {
+		o = e;
+	}),
+		(e.useAxios = a),
+		(e.useLocalStorage = function (e, r) {
+			const [o, n] = t.useState(() => {
+				try {
+					const t = window.localStorage.getItem(e);
+					return t ? JSON.parse(t) : r ?? "";
+				} catch (e) {
+					return console.error(e), r;
+				}
+			});
+			return (
+				t.useEffect(() => {
+					try {
+						window.localStorage.setItem(e, JSON.stringify(o));
+					} catch (e) {
+						console.error(e);
+					}
+				}, [e, o]),
+				[
+					o,
+					n,
+					() => {
+						try {
+							window.localStorage.removeItem(e), n("");
+						} catch (e) {
+							console.error(e);
+						}
+					},
+				]
+			);
+		});
+});
