@@ -2,9 +2,10 @@
 import typescript from '@rollup/plugin-typescript';
 
 export default {
-  input: 'src/index.ts', // 入口文件路径
+  input: './src/index.ts', // 入口文件路径
   output: {
-    file: 'dist/index.js', // 输出文件路径
+    name: 'fl-hooks',
+    file: './dist/index.js', // 输出文件路径
     format: 'umd', // 输出模块格式为 CommonJS
     sourcemap: false, // 生成 source map
   },
