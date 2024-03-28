@@ -9,4 +9,4 @@ npm i github:Fullsize/react-hooks-library
 ## api
 
 - [`useAxios`](./public/doc/useAxios.md) — 基于axios的react hooks封装，可继承axios实例
-- [`useLocalStorage`]('./public/doc/useLocalStorage.md') — localStorage的hooks封装
+- [`useLocalStorage`](./public/doc/useLocalStorage.md) — localStorage的hooks封装
