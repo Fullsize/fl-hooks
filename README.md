@@ -3,7 +3,7 @@
 这个库提供了一些有用的 React Hooks，用于简化 React 应用程序的开发。
 
 ```
-npm i github:Fullsize/react-hooks-library
+npm i fl-hooks
 ```
 
 ## api
