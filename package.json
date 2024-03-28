@@ -1,8 +1,12 @@
 {
   "name": "fl-hooks",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "types": "./dist/type/index.d.ts",
-  "homepage": "https://github.com/Fullsize/react-hooks-library.git",
+  "homepage": "https://github.com/Fullsize/react-hooks-library/#/readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fullsize/react-hooks-library"
+  },
   "description": "",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.js",
@@ -15,6 +19,9 @@
   "files": [
     "dist"
   ],
+  "keywords": [],
+  "author": "@fullsize",
+  "license": "ISC",
   "scripts": {
     "dev": "storybook dev -p 6006",
     "storybook": "storybook dev -p 6006",
@@ -23,9 +30,6 @@
     "npm:publish": "npm run build:lib && npm publish .",
     "storybook:publish": "npm run build-storybook && touch ./storybook-static/.nojekyll"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "peerDependencies": {
     "axios": "*",
     "react": "*"
