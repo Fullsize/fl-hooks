@@ -1,6 +1,7 @@
 {
   "name": "fl-hooks",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "homepage": "https://github.com/Fullsize/react-hooks-library.git",
   "description": "",
   "main": "./dist/index.index.umd.js",
   "module": "./dist/index.js",
@@ -18,7 +19,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build:lib": "rollup -c rollup.config.mjs",
-    "publish": "npm public .",
+    "npm:publish": "npm run build:lib && npm publish .",
     "storybook:publish": "npm run build-storybook && touch ./storybook-static/.nojekyll"
   },
   "keywords": [],
