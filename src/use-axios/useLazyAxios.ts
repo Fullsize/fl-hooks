@@ -1,0 +1,24 @@
+import { useEffect, useState } from 'react'
+import { default as useBaseAxios, Pair } from './useBaseAxios'
+import { AxiosRequestConfig } from "axios"
+type useData<T> = [Pair<T>[0], (op?: AxiosRequestConfig) => void]
+const useLazyAxios = <T extends any = any>(config: AxiosRequestConfig): useData<T> => {
+  const [option, setOption] = useState(config)
+  const [isSend, setIsSend] = useState(false)
+  const [state, fetchData] = useBaseAxios(config)
+  useEffect(() => {
+    if (isSend) {
+      fetchData(option)
+    }
+
+  }, [option, isSend])
+  const changeOption = (op?: AxiosRequestConfig) => {
+    setOption({
+      ...option,
+      ...op,
+    });
+    setIsSend(true)
+  };
+  return [state, changeOption]
+}
+export default useLazyAxios
