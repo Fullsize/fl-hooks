@@ -1,6 +1,6 @@
 {
   "name": "fl-hooks",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "types": "./dist/type/index.d.ts",
   "homepage": "https://github.com/Fullsize/react-hooks-library/#/readme",
   "repository": {
