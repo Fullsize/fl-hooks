@@ -1,5 +1,0 @@
-import{r as n,R as e}from"./index-BBkUAzwr.js";import{u as D,S}from"./ShowDocs-BiDl-P7W.js";const f=s=>{const[r,a]=n.useState(s),[g,x]=D(s);return n.useEffect(()=>{x(r)},[r]),[g,E=>{a({...r,...E})}]},i=()=>{const[{data:s,loading:r,error:a}]=f({url:"/myapi"});return e.createElement(e.Fragment,null,r&&e.createElement(e.Fragment,null,"...."),a&&e.createElement(e.Fragment,null,"请求错误"))},F={title:"base/useAxios",component:i},t={render:()=>e.createElement(S,{md:"doc/useAxios.md"})},o={render:()=>e.createElement(i,null)};var c,m,u;t.parameters={...t.parameters,docs:{...(c=t.parameters)==null?void 0:c.docs,source:{originalSource:`{
-  render: () => <ShowDocs md={"doc/useAxios.md"} />
-}`,...(u=(m=t.parameters)==null?void 0:m.docs)==null?void 0:u.source}}};var d,l,p;o.parameters={...o.parameters,docs:{...(d=o.parameters)==null?void 0:d.docs,source:{originalSource:`{
-  render: () => <Page />
-}`,...(p=(l=o.parameters)==null?void 0:l.docs)==null?void 0:p.source}}};const w=["Doc","Demo"];export{o as Demo,t as Doc,w as __namedExportsOrder,F as default};

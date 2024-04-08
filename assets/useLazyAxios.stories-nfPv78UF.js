@@ -1,5 +1,0 @@
-import{r as c,R as e}from"./index-BBkUAzwr.js";import{u as D,S as h}from"./ShowDocs-BiDl-P7W.js";const A=a=>{const[t,n]=c.useState(a),[r,E]=c.useState(!1),[S,x]=D(a);return c.useEffect(()=>{r&&x(t)},[t,r]),[S,f=>{n({...t,...f}),E(!0)}]},g=()=>{const[{data:a,loading:t,error:n},r]=A({url:"/myapi"});return e.createElement(e.Fragment,null,t&&e.createElement(e.Fragment,null,"...."),n&&e.createElement(e.Fragment,null,"请求错误"),e.createElement("button",{onClick:()=>r()},"点击请求"))},b={title:"base/useLazyAxios",component:g},s={render:()=>e.createElement(h,{md:"doc/useAxios.md"})},o={render:()=>e.createElement(g,null)};var m,u,d;s.parameters={...s.parameters,docs:{...(m=s.parameters)==null?void 0:m.docs,source:{originalSource:`{
-  render: () => <ShowDocs md={"doc/useAxios.md"} />
-}`,...(d=(u=s.parameters)==null?void 0:u.docs)==null?void 0:d.source}}};var l,i,p;o.parameters={...o.parameters,docs:{...(l=o.parameters)==null?void 0:l.docs,source:{originalSource:`{
-  render: () => <Page />
-}`,...(p=(i=o.parameters)==null?void 0:i.docs)==null?void 0:p.source}}};const w=["Doc","Demo"];export{o as Demo,s as Doc,w as __namedExportsOrder,b as default};
