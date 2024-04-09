@@ -23,7 +23,8 @@ const dataFetchReducer = <T extends any = any>(state: State<T>, action: Action) 
       return {
         ...state,
         loading: true,
-
+        error: null,
+        data: null
       }
     case FETCHTYPE.SUCCESS:
       return {
