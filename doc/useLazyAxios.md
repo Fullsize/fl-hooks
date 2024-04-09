@@ -21,5 +21,5 @@ export default Page;
 支持继承axios的实例
 
 ```javascript
-useAxios.extend(AxiosInstance);
+useLazyAxios.extend(AxiosInstance);
 ```
