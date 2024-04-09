@@ -21,7 +21,7 @@ export default meta;
 type Story = StoryObj<typeof useLazyAxios>;
 
 export const Doc: Story = {
-  render: () => <ShowDocs md={"doc/useAxios.md"} />,
+  render: () => <ShowDocs md={"doc/useLazyAxios.md"} />,
 };
 export const Demo: Story = {
   render: () => <Page />,
