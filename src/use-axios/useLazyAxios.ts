@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { default as useBaseAxios, Pair } from './useBaseAxios'
-import { AxiosRequestConfig, AxiosInstance } from "axios"
+import { AxiosRequestConfig, AxiosInstance } from "axios";
+import { deepMerge } from '@fullsize/utils';
 type useData<T> = [Pair<T>[0], (op?: AxiosRequestConfig) => void]
 const useLazyAxios = <T extends any = any>(config: AxiosRequestConfig): useData<T> => {
   const [option, setOption] = useState(config)
@@ -13,10 +14,7 @@ const useLazyAxios = <T extends any = any>(config: AxiosRequestConfig): useData<
 
   }, [option, isSend])
   const changeOption = (op?: AxiosRequestConfig) => {
-    setOption({
-      ...option,
-      ...op,
-    });
+    setOption(deepMerge(option, op));
     setIsSend(true)
   };
   return [state, changeOption]

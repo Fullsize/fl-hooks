@@ -3,12 +3,28 @@ import React from "react";
 import { useLazyAxios } from "../src";
 import ShowDocs from "./utl/ShowDocs";
 const Page = () => {
-  const [{ data, loading, error }, get] = useLazyAxios({ url: "/myapi" });
+  const [{ data, loading, error }, get] = useLazyAxios({
+    url: "/myapi",
+    method: "post",
+    data: {
+      b: 1,
+    },
+  });
   return (
     <>
       {loading && <>....</>}
       {error && <>请求错误</>}
-      <button onClick={() => get()}>点击请求</button>
+      <button
+        onClick={() =>
+          get({
+            data: {
+              a: 1,
+            },
+          })
+        }
+      >
+        点击请求
+      </button>
     </>
   );
 };

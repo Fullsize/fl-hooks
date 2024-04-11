@@ -32,7 +32,8 @@
   },
   "peerDependencies": {
     "axios": "*",
-    "react": "*"
+    "react": "*",
+    "@fullsize/utils": "^1.0.5"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.25",
@@ -57,5 +58,8 @@
     "storybook": "^8.0.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "@fullsize/utils": "^1.0.5"
   }
 }
