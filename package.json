@@ -58,6 +58,6 @@
     "storybook": "^8.0.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3",
-    "@fullsize/utils": "last"
+    "@fullsize/utils": "latest"
   }
 }
