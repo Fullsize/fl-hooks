@@ -1,5 +1,0 @@
-import{R as e}from"./index-BBkUAzwr.js";import{S as p,a as g}from"./ShowDocs-B_e8tKQF.js";const d=()=>{const[{data:E,loading:l,error:u},i]=g({url:"/myapi"});return e.createElement(e.Fragment,null,l&&e.createElement(e.Fragment,null,"...."),u&&e.createElement(e.Fragment,null,"请求错误"),e.createElement("button",{onClick:()=>i()},"点击请求"))},y={title:"base/useLazyAxios",component:d},r={render:()=>e.createElement(p,{md:"doc/useLazyAxios.md"})},a={render:()=>e.createElement(d,null)};var o,t,s;r.parameters={...r.parameters,docs:{...(o=r.parameters)==null?void 0:o.docs,source:{originalSource:`{
-  render: () => <ShowDocs md={"doc/useLazyAxios.md"} />
-}`,...(s=(t=r.parameters)==null?void 0:t.docs)==null?void 0:s.source}}};var n,c,m;a.parameters={...a.parameters,docs:{...(n=a.parameters)==null?void 0:n.docs,source:{originalSource:`{
-  render: () => <Page />
-}`,...(m=(c=a.parameters)==null?void 0:c.docs)==null?void 0:m.source}}};const S=["Doc","Demo"];export{a as Demo,r as Doc,S as __namedExportsOrder,y as default};
