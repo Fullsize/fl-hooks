@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@fullsize/utils':
-    specifier: ^1.0.7
-    version: 1.0.7
+    specifier: ^1.0.8
+    version: 1.0.8
 
 devDependencies:
   '@chromatic-com/storybook':
@@ -1617,8 +1617,8 @@ packages:
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
     dev: true
 
-  /@fullsize/utils@1.0.7:
-    resolution: {integrity: sha512-JXHGddCrM9FgluGTp5kspq6wXU3WrxNKJpt3y6bCBbCNDLyXiwcH1jnk1++iEK7F60V3c+BaXLQ6DmE0UL/C+w==}
+  /@fullsize/utils@1.0.8:
+    resolution: {integrity: sha512-oipa/P3/JVD2c2AbnGaftAr9M1FmDv2sZaLtasnqJ3hYcieKQoxOp04DARQkV6PytLoRFsRhqjPCkYyHr8xZug==}
     dev: false
 
   /@isaacs/cliui@8.0.2:
