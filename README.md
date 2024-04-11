@@ -1,14 +1,13 @@
-<!-- keywords: React Hooks,Axios,Request -->
+<!-- keywords: React Hooks, Axios, Request -->
 # react-hooks-library
-
-这个库提供了一些有用的 React Hooks，用于简化 React 应用程序的开发。
-
+This library provides some useful React Hooks to simplify the development of React applications.
 ```
 npm i fl-hooks
 ```
 
 ## api
 
-- [`useAxios`](./public/doc/useAxios.md) — 基于axios的react hooks封装，可继承axios实例
-- [`useLocalStorage`](./public/doc/useLocalStorage.md) — localStorage的hooks封装
-- [`useLazyAxios`](./public/doc/useLazyAxios.md) -自定义钩子提供了一种在 React 函数组件中使用 Axios 执行惰性数据获取的方法。
+- [`useAxios`](./public/doc/useAxios.md) — A React hook wrapper based on Axios, allowing for inheritance of Axios instances
+- [`useLocalStorage`](./public/doc/useLocalStorage.md) — A hook wrapper for localStorage
+- [`useLazyAxios`](./public/doc/useLazyAxios.md) — A custom hook providing a method to lazily fetch data using Axios in React functional components.
+
