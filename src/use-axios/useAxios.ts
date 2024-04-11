@@ -10,7 +10,7 @@ const useAxios = <T extends any = any>(config: AxiosRequestConfig): useData<T> =
     fetchData(option)
   }, [option])
   const changeOption = (op?: AxiosRequestConfig) => {
-    setOption(deepMerge(option, op));
+    setOption({ ...deepMerge(option, op) });
   };
   return [state, changeOption]
 }

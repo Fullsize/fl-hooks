@@ -14,7 +14,7 @@ const useLazyAxios = <T extends any = any>(config: AxiosRequestConfig): useData<
 
   }, [option, isSend])
   const changeOption = (op?: AxiosRequestConfig) => {
-    setOption(deepMerge(option, op));
+    setOption({ ...deepMerge(option, op) });
     setIsSend(true)
   };
   return [state, changeOption]
