@@ -1,11 +1,11 @@
 {
   "name": "fl-hooks",
-  "version": "1.0.10",
+  "version": "1.0.13",
   "types": "./dist/type/index.d.ts",
   "homepage": "https://github.com/Fullsize/react-hooks-library/#/readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Fullsize/react-hooks-library"
+    "url": "git+https://github.com/Fullsize/react-hooks-library.git"
   },
   "description": "",
   "main": "./dist/index.umd.js",
@@ -27,16 +27,16 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build:lib": "rollup -c rollup.config.mjs",
-    "npm:publish": "npm run build:lib && npm publish .",
+    "npm:publish": "npm run build:lib && node updateVersion && npm publish .",
     "storybook:publish": "npm run build-storybook && touch ./storybook-static/.nojekyll"
   },
   "peerDependencies": {
     "axios": "*",
-    "react": "*",
-    "@fullsize/utils": "^1.0.5"
+    "react": "*"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.2.25",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
     "@storybook/addon-docs": "^8.0.4",
@@ -60,6 +60,6 @@
     "typescript": "^5.4.3"
   },
   "dependencies": {
-    "@fullsize/utils": "^1.0.5"
+    "@fullsize/utils": "^1.0.7"
   }
 }
