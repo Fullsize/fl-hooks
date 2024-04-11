@@ -14,10 +14,6 @@ npm i fl-hooks
 
 ## Key Features
 
-- useAxios - A React hook wrapper based on Axios, allowing for inheritance of Axios instances. Check out the useAxios documentation for detailed usage instructions.
-
-## Key Features
-
 - [`useAxios`](./public/doc/useAxios.md) - A React hook wrapper based on Axios, allowing for inheritance of Axios instances. Check out the useAxios documentation for detailed usage instructions.
 
 - [`useLocalStorage`](./public/doc/useLocalStorage.md) - A hook wrapper for localStorage, simplifying the management of local storage data. Learn more in the useLocalStorage documentation.
