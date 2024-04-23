@@ -4,15 +4,13 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  '@fullsize/utils':
-    specifier: ^1.0.8
-    version: 1.0.8
-
 devDependencies:
   '@chromatic-com/storybook':
     specifier: ^1.2.25
     version: 1.2.25(react@18.2.0)
+  '@fullsize/utils':
+    specifier: latest
+    version: 1.0.10
   '@rollup/plugin-node-resolve':
     specifier: ^15.2.3
     version: 15.2.3(rollup@4.13.0)
@@ -55,6 +53,9 @@ devDependencies:
   axios:
     specifier: ^1.6.8
     version: 1.6.8
+  echarts:
+    specifier: ^5.5.0
+    version: 5.5.0
   gh-pages:
     specifier: ^6.1.1
     version: 6.1.1
@@ -1617,9 +1618,9 @@ packages:
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
     dev: true
 
-  /@fullsize/utils@1.0.8:
-    resolution: {integrity: sha512-oipa/P3/JVD2c2AbnGaftAr9M1FmDv2sZaLtasnqJ3hYcieKQoxOp04DARQkV6PytLoRFsRhqjPCkYyHr8xZug==}
-    dev: false
+  /@fullsize/utils@1.0.10:
+    resolution: {integrity: sha512-oMTmUY+TkT1k1OzxjGjUt7xgCohFJa7udb3sn9QR/NgG1XoyY7FR0J72zvti/kEne53fhY671AClKepCXzC6UA==}
+    dev: true
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -3971,6 +3972,13 @@ packages:
 
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+    dev: true
+
+  /echarts@5.5.0:
+    resolution: {integrity: sha512-rNYnNCzqDAPCr4m/fqyUFv7fD9qIsd50S6GDFgO1DxZhncCsNsG7IfUlAlvZe5oSEQxtsjnHiUuppzccry93Xw==}
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.5.0
     dev: true
 
   /ee-first@1.1.1:
@@ -7137,6 +7145,10 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
+  /tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: true
+
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
@@ -7550,6 +7562,12 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  /zrender@5.5.0:
+    resolution: {integrity: sha512-O3MilSi/9mwoovx77m6ROZM7sXShR/O/JIanvzTwjN3FORfLSr81PsUGd7jlaYOeds9d8tw82oP44+3YucVo+w==}
+    dependencies:
+      tslib: 2.3.0
     dev: true
 
   /zwitch@2.0.4:
