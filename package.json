@@ -1,6 +1,6 @@
 {
   "name": "fl-hooks",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "types": "./dist/type/index.d.ts",
   "homepage": "https://github.com/Fullsize/react-hooks-library/#/readme",
   "repository": {
@@ -29,7 +29,7 @@
     "build:lib": "rollup -c rollup.config.mjs",
     "npm:publish": "npm run build:lib && node updateVersion && npm publish .",
     "storybook:publish": "npm run build-storybook && touch ./storybook-static/.nojekyll",
-    "release": "semantic-release"
+    "release": "node updateVersion && semantic-release"
   },
   "peerDependencies": {
     "axios": "*",
