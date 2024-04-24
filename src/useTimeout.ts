@@ -6,7 +6,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
  * @param {number} ms 毫秒数
  * @return {*}
  */
-export default function useTimeout(fn: Function, ms: number) {
+export default function useTimeout(fn: Function, ms: number = 0,) {
   const [timerId, setTimerId] = useState<number | null>(null);
   const fnRef = useRef<Function>(fn);
 
