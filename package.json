@@ -28,7 +28,8 @@
     "build-storybook": "storybook build",
     "build:lib": "rollup -c rollup.config.mjs",
     "npm:publish": "npm run build:lib && node updateVersion && npm publish .",
-    "storybook:publish": "npm run build-storybook && touch ./storybook-static/.nojekyll"
+    "storybook:publish": "npm run build-storybook && touch ./storybook-static/.nojekyll",
+    "release": "semantic-release"
   },
   "peerDependencies": {
     "axios": "*",
@@ -41,6 +42,7 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
+    "@semantic-release/changelog": "^6.0.3",
     "@storybook/addon-docs": "^8.0.4",
     "@storybook/addon-essentials": "^8.0.4",
     "@storybook/addon-interactions": "^8.0.4",
@@ -58,6 +60,7 @@
     "react": "^18.2.0",
     "react-markdown": "^9.0.1",
     "rollup": "^4.13.0",
+    "semantic-release": "^23.0.8",
     "storybook": "^8.0.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
