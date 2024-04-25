@@ -29,7 +29,7 @@
     "build:lib": "rollup -c rollup.config.mjs",
     "npm:publish": "npm run build:lib && node updateVersion && npm publish .",
     "storybook:publish": "npm run build-storybook && touch ./storybook-static/.nojekyll",
-    "release": "node updateVersion && semantic-release"
+    "release": "semantic-release"
   },
   "peerDependencies": {
     "axios": "*",
