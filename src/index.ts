@@ -4,3 +4,5 @@ export { default as useLocalStorage } from './useLocalStorage'
 export { default as useTimeout } from './useTimeout';
 export { default as useEcharts } from './useEcharts';
 export { default as useTimeoutFn } from './useTimeoutFn';
+export { default as useInputValue } from './useInputValue';
+export { default as useMeasure } from './useNodeBoundingRect';
