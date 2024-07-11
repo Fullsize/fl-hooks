@@ -6,3 +6,4 @@ export { default as useEcharts } from './useEcharts';
 export { default as useTimeoutFn } from './useTimeoutFn';
 export { default as useInputValue } from './useInputValue';
 export { default as useMeasure } from './useNodeBoundingRect';
+export { default as useToggle } from './useToggle';
