@@ -8,3 +8,5 @@ export { default as useInputValue } from './useInputValue';
 export { default as useMeasure } from './useNodeBoundingRect';
 export { default as useToggle } from './useToggle';
 export { default as useRenderCount } from './useRenderCount';
+export { default as useIsClient } from './useIsClient';
+export { default as useHover } from './useHover';
