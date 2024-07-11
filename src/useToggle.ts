@@ -8,7 +8,7 @@ import { useState, useCallback } from 'react';
  * @param initValue 初始状态值，必须是布尔值。
  * @returns 返回一个数组，包含当前状态值和切换状态的函数。
  */
-export default function useToggle(initValue: boolean) {
+export default function useToggle(initValue: boolean): [boolean, (val?: boolean) => void] {
   const [value, setValue] = useState(initValue)
   const toggle = useCallback((val?: boolean) => {
     if (val !== undefined) {
