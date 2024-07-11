@@ -11,8 +11,8 @@ import { useState, useCallback } from 'react';
  */
 export default function useToggle(initValue: boolean) {
   const [value, setValue] = useState(initValue)
-  const onClick = useCallback((val: boolean) => {
-    if (val !== null || val !== undefined) {
+  const onClick = useCallback((val?: boolean) => {
+    if (val !== undefined) {
       setValue(val)
     } else {
       setValue(!value)
