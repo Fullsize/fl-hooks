@@ -1,0 +1,5 @@
+import{r as o,R as e}from"./index-BBkUAzwr.js";import{S as D}from"./ShowDocs-CsYadgJI.js";function S(r){const[p,i]=o.useState(r),g=o.useCallback(E=>{i(E.target.value)},[]);return{value:p,onChange:g}}const d=()=>{const r=S("初始化");return e.createElement(e.Fragment,null,e.createElement("input",{...r}),e.createElement("div",null,"输入值: ",r.value))},v={title:"base/useInputValue",component:d},t={render:()=>e.createElement(D,{md:"doc/useAxios.md"})},a={render:()=>e.createElement(d,null)};var s,n,c;t.parameters={...t.parameters,docs:{...(s=t.parameters)==null?void 0:s.docs,source:{originalSource:`{
+  render: () => <ShowDocs md={"doc/useAxios.md"} />
+}`,...(c=(n=t.parameters)==null?void 0:n.docs)==null?void 0:c.source}}};var m,u,l;a.parameters={...a.parameters,docs:{...(m=a.parameters)==null?void 0:m.docs,source:{originalSource:`{
+  render: () => <Page />
+}`,...(l=(u=a.parameters)==null?void 0:u.docs)==null?void 0:l.source}}};const h=["Doc","Demo"];export{a as Demo,t as Doc,h as __namedExportsOrder,v as default};
