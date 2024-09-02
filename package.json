@@ -2,10 +2,10 @@
   "name": "fl-hooks",
   "version": "1.0.21",
   "types": "./dist/type/index.d.ts",
-  "homepage": "https://github.com/Fullsize/react-hooks-library/#/readme",
+  "homepage": "https://github.com/Fullsize/fl-hooks/#/readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fullsize/react-hooks-library.git"
+    "url": "git+https://github.com/Fullsize/fl-hooks.git"
   },
   "description": "",
   "main": "./dist/index.umd.js",
