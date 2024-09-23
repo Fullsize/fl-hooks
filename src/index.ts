@@ -11,3 +11,4 @@ export { default as useRenderCount } from './useRenderCount';
 export { default as useIsClient } from './useIsClient';
 export { default as useHover } from './useHover';
 export { default as useOnline } from './useOnline';
+export { default as usePortal } from './usePortal';
