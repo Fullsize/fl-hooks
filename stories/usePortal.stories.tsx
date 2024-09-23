@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { usePortal } from "../src";
 import ShowDocs from "./utl/ShowDocs";
 const Page = () => {
-  const Portal = usePortal(document.querySelector("title"));
+  const Portal: any = usePortal(document.querySelector("title"));
   return (
     <p>
       Hello world!
