@@ -58,7 +58,6 @@ const usePortal = (el: HTMLElement | null): ((children: ReactNode) => React.Reac
       setPortal(newPortal);
 
     }
-    console.log(59, el)
     return () => {
       portal.remove(); // Clean up the portal on unmount or when `el` changes
     };

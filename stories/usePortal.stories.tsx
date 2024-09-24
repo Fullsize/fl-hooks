@@ -3,11 +3,14 @@ import React, { useRef } from "react";
 import { usePortal } from "../src";
 import ShowDocs from "./utl/ShowDocs";
 const Page = () => {
-  const Portal: any = usePortal(document.querySelector("title"));
+  const Portal = usePortal(document.querySelector("title"));
+  console.log(7, Portal);
   return (
     <p>
       Hello world!
-      <Portal>Portalized Title</Portal>
+      <Portal type="" props={{}} key={""}>
+        Portalized Title
+      </Portal>
     </p>
   );
 };
