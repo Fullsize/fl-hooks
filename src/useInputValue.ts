@@ -9,10 +9,16 @@ import { useState, useCallback, ChangeEvent } from 'react';
  * @returns 返回一个对象，包含当前的值和一个onChange处理函数。
  */
 function useInputValue<T extends string | number>(initValue: T) {
+  // 定义一个状态来存储当前的值，并提供一个函数来更新这个值。
   const [value, setValue] = useState<T>(initValue)
+
+  // 定义一个onChange事件处理函数，它会在输入框的值改变时被调用。
   const onChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
+    // 更新状态为输入框的新值。
     setValue(event.target.value as T)
   }, [])
+
+  // 返回当前的值和onChange处理函数，供组件使用。
   return {
     value,
     onChange
