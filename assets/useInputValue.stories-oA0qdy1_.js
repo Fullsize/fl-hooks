@@ -1,0 +1,5 @@
+import{r as o,R as e}from"./index-uubelm5h.js";import{S as D}from"./ShowDocs-CEFBxudd.js";import"./client-DnFX9VPo.js";function S(r){const[p,i]=o.useState(r),g=o.useCallback(E=>{i(E.target.value)},[]);return{value:p,onChange:g}}const d=()=>{const r=S("初始化");return e.createElement(e.Fragment,null,e.createElement("input",{...r}),e.createElement("div",null,"输入值: ",r.value))},I={title:"base/useInputValue",component:d},t={render:()=>e.createElement(D,{md:"doc/useInputValue.md"})},a={render:()=>e.createElement(d,null)};var n,s,c;t.parameters={...t.parameters,docs:{...(n=t.parameters)==null?void 0:n.docs,source:{originalSource:`{
+  render: () => <ShowDocs md={"doc/useInputValue.md"} />
+}`,...(c=(s=t.parameters)==null?void 0:s.docs)==null?void 0:c.source}}};var u,m,l;a.parameters={...a.parameters,docs:{...(u=a.parameters)==null?void 0:u.docs,source:{originalSource:`{
+  render: () => <Page />
+}`,...(l=(m=a.parameters)==null?void 0:m.docs)==null?void 0:l.source}}};const h=["Doc","Demo"];export{a as Demo,t as Doc,h as __namedExportsOrder,I as default};

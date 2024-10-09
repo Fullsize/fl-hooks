@@ -1,5 +1,0 @@
-import{r as p,R as e}from"./index-BBkUAzwr.js";import{S as E}from"./ShowDocs-CsYadgJI.js";function D(){const r=p.useRef(0);return r.current+=1,r.current}const i=()=>{const r=D(),[o,s]=p.useState(0);return e.createElement(e.Fragment,null,e.createElement("span",null,"当前渲染次数: ",r),e.createElement("div",null,e.createElement("span",null,"个数: ",o),e.createElement("button",{onClick:()=>s(o+1)},"增加"),e.createElement("button",{onClick:()=>s(o-1)},"减少")))},g={title:"base/useRenderCount",component:i},t={render:()=>e.createElement(E,{md:"doc/useAxios.md"})},n={render:()=>e.createElement(i,null)};var c,a,m;t.parameters={...t.parameters,docs:{...(c=t.parameters)==null?void 0:c.docs,source:{originalSource:`{
-  render: () => <ShowDocs md={"doc/useAxios.md"} />
-}`,...(m=(a=t.parameters)==null?void 0:a.docs)==null?void 0:m.source}}};var u,l,d;n.parameters={...n.parameters,docs:{...(u=n.parameters)==null?void 0:u.docs,source:{originalSource:`{
-  render: () => <Page />
-}`,...(d=(l=n.parameters)==null?void 0:l.docs)==null?void 0:d.source}}};const x=["Doc","Demo"];export{n as Demo,t as Doc,x as __namedExportsOrder,g as default};

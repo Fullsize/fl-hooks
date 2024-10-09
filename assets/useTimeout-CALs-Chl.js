@@ -1,0 +1,1 @@
+import{r as e}from"./index-uubelm5h.js";function m(u,o=0){const[r,s]=e.useState(null),c=e.useRef(u);e.useEffect(()=>{c.current=u},[u]);const n=e.useCallback(()=>{const i=window.setTimeout(()=>{c.current(),s(null)},o);s(i)},[o]),t=e.useCallback(()=>{r&&(clearTimeout(r),s(null))},[r]);return e.useEffect(()=>()=>{t()},[t]),[e.useCallback(()=>{t(),n()},[t,n]),t]}export{m as u};
