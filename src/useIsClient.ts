@@ -9,12 +9,15 @@ import { useState, useEffect } from 'react';
  * @returns {boolean} 当前是否在客户端执行。返回`true`表示在客户端，`false`表示在服务端。
  */
 function useIsClient() {
+  // 初始化状态，假设初始不在客户端
   const [isClient, setIsClient] = useState(false);
 
+  // 当组件挂载时，设置状态为true，表明此时在客户端
   useEffect(() => {
     setIsClient(true);
   }, []);
 
+  // 返回判断结果，用于确定是否在客户端
   return isClient;
 }
 
