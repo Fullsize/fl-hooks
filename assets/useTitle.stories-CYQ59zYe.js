@@ -1,0 +1,5 @@
+import{R as e,r as p}from"./index-uubelm5h.js";import{S as f}from"./ShowDocs-CEFBxudd.js";const E=t=>{const r=typeof document<"u",i=e.useRef(r?document.title:"");p.useEffect(()=>{if(r)return document.title!==t&&(document.title=t),()=>{document.title=i.current}},[])},g=()=>(E("Alert"),e.createElement("p",null,"Alert! Title has changed")),d=()=>{const[t,r]=e.useState(!1);return e.createElement(e.Fragment,null,e.createElement("button",{onClick:()=>r(!t)},"Toggle alert"),t&&e.createElement(g,null))},A={title:"base/useTitle",component:d},n={render:()=>e.createElement(f,{md:"doc/useTitle.md"})},o={render:()=>e.createElement(d,null)};var c,s,a;n.parameters={...n.parameters,docs:{...(c=n.parameters)==null?void 0:c.docs,source:{originalSource:`{
+  render: () => <ShowDocs md={"doc/useTitle.md"} />
+}`,...(a=(s=n.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};var l,m,u;o.parameters={...o.parameters,docs:{...(l=o.parameters)==null?void 0:l.docs,source:{originalSource:`{
+  render: () => <MyApp />
+}`,...(u=(m=o.parameters)==null?void 0:m.docs)==null?void 0:u.source}}};const S=["Doc","Demo"];export{o as Demo,n as Doc,S as __namedExportsOrder,A as default};

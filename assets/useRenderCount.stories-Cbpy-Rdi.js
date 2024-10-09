@@ -1,0 +1,5 @@
+import{r as p,R as e}from"./index-uubelm5h.js";import{S as E}from"./ShowDocs-CEFBxudd.js";function C(){const r=p.useRef(0);return r.current+=1,r.current}const i=()=>{const r=C(),[o,s]=p.useState(0);return e.createElement(e.Fragment,null,e.createElement("span",null,"当前渲染次数: ",r),e.createElement("div",null,e.createElement("span",null,"个数: ",o),e.createElement("button",{onClick:()=>s(o+1)},"增加"),e.createElement("button",{onClick:()=>s(o-1)},"减少")))},S={title:"base/useRenderCount",component:i},t={render:()=>e.createElement(E,{md:"doc/useRenderCount.md"})},n={render:()=>e.createElement(i,null)};var c,a,u;t.parameters={...t.parameters,docs:{...(c=t.parameters)==null?void 0:c.docs,source:{originalSource:`{
+  render: () => <ShowDocs md={"doc/useRenderCount.md"} />
+}`,...(u=(a=t.parameters)==null?void 0:a.docs)==null?void 0:u.source}}};var m,d,l;n.parameters={...n.parameters,docs:{...(m=n.parameters)==null?void 0:m.docs,source:{originalSource:`{
+  render: () => <Page />
+}`,...(l=(d=n.parameters)==null?void 0:d.docs)==null?void 0:l.source}}};const f=["Doc","Demo"];export{n as Demo,t as Doc,f as __namedExportsOrder,S as default};
