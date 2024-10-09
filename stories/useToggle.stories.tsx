@@ -20,7 +20,7 @@ export default meta;
 type Story = StoryObj<typeof useToggle>;
 
 export const Doc: Story = {
-  render: () => <ShowDocs md={"doc/useAxios.md"} />,
+  render: () => <ShowDocs md={"doc/useToggle.md"} />,
 };
 export const Demo: Story = {
   render: () => <Page />,

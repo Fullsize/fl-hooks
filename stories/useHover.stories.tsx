@@ -28,7 +28,7 @@ export default meta;
 type Story = StoryObj<typeof useHover>;
 
 export const Doc: Story = {
-  render: () => <ShowDocs md={"doc/useAxios.md"} />,
+  render: () => <ShowDocs md={"doc/useHover.md"} />,
 };
 export const Demo: Story = {
   render: () => <Page />,

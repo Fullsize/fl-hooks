@@ -20,7 +20,7 @@ export default meta;
 type Story = StoryObj<typeof useInputValue>;
 
 export const Doc: Story = {
-  render: () => <ShowDocs md={"doc/useAxios.md"} />,
+  render: () => <ShowDocs md={"doc/useInputValue.md"} />,
 };
 export const Demo: Story = {
   render: () => <Page />,

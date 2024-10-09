@@ -15,7 +15,7 @@ export default meta;
 type Story = StoryObj<typeof useIsClient>;
 
 export const Doc: Story = {
-  render: () => <ShowDocs md={"doc/useAxios.md"} />,
+  render: () => <ShowDocs md={"doc/useIsClient.md"} />,
 };
 export const Demo: Story = {
   render: () => <Page />,

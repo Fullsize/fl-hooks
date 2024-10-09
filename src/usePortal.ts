@@ -10,7 +10,15 @@ interface Portal {
   render: (children: ReactNode) => React.ReactPortal | null;
   remove: () => void;
 }
-
+/**
+ * 使用Portal的自定义钩子.
+ * 
+ * 该钩子用于创建一个Portal，以便在指定的DOM元素中渲染React子组件.
+ * 它处理了React 18和之前版本的不同Portal创建逻辑，并管理Portal的渲染和清理过程.
+ * 
+ * @param el 要在其中渲染Portal的DOM元素，如果为null，则不渲染Portal.
+ * @returns 返回一个函数，该函数接受一个React子组件，并将其渲染到Portal中.
+ */
 const usePortal = (el: HTMLElement | null): ((children: ReactNode) => React.ReactPortal | null) => {
   const [portal, setPortal] = useState<Portal>({
     render: () => null,

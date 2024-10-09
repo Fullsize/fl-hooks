@@ -25,7 +25,7 @@ export default meta;
 type Story = StoryObj<typeof useRenderCount>;
 
 export const Doc: Story = {
-  render: () => <ShowDocs md={"doc/useAxios.md"} />,
+  render: () => <ShowDocs md={"doc/useRenderCount.md"} />,
 };
 export const Demo: Story = {
   render: () => <Page />,

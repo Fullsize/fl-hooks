@@ -23,7 +23,7 @@ export default meta;
 type Story = StoryObj<typeof usePortal>;
 
 export const Doc: Story = {
-  render: () => <ShowDocs md={"doc/useAxios.md"} />,
+  render: () => <ShowDocs md={"doc/usePortal.md"} />,
 };
 export const Demo: Story = {
   render: () => <Page />,
