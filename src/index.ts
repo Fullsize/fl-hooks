@@ -14,3 +14,4 @@ export { default as useOnline } from './useOnline';
 export { default as usePortal } from './usePortal';
 export { default as useTitle } from './useTitle';
 export { default as useMap } from './useMap';
+export { default as useSetState } from './useSetState';
